@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		11706856297ADDC90002B1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11706855297ADDC90002B1CC /* AppDelegate.swift */; };
-		11706858297ADDC90002B1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11706857297ADDC90002B1CC /* SceneDelegate.swift */; };
 		1170685A297ADDC90002B1CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11706859297ADDC90002B1CC /* ViewController.swift */; };
 		1170685D297ADDC90002B1CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1170685B297ADDC90002B1CC /* Main.storyboard */; };
 		1170685F297ADDCB0002B1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1170685E297ADDCB0002B1CC /* Assets.xcassets */; };
 		11706862297ADDCB0002B1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11706860297ADDCB0002B1CC /* LaunchScreen.storyboard */; };
+		1170686B297AE0A20002B1CC /* ArcGIS in Frameworks */ = {isa = PBXBuildFile; productRef = 1170686A297AE0A20002B1CC /* ArcGIS */; };
+		1170686D297AE47B0002B1CC /* mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = 1170686C297AE47B0002B1CC /* mountains.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11706852297ADDC90002B1CC /* DevelopingWithWebMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopingWithWebMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11706855297ADDC90002B1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11706857297ADDC90002B1CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11706859297ADDC90002B1CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1170685C297ADDC90002B1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1170685E297ADDCB0002B1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11706861297ADDCB0002B1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11706863297ADDCB0002B1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1170686C297AE47B0002B1CC /* mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1170686B297AE0A20002B1CC /* ArcGIS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,12 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				11706855297ADDC90002B1CC /* AppDelegate.swift */,
-				11706857297ADDC90002B1CC /* SceneDelegate.swift */,
 				11706859297ADDC90002B1CC /* ViewController.swift */,
 				1170685B297ADDC90002B1CC /* Main.storyboard */,
 				1170685E297ADDCB0002B1CC /* Assets.xcassets */,
 				11706860297ADDCB0002B1CC /* LaunchScreen.storyboard */,
 				11706863297ADDCB0002B1CC /* Info.plist */,
+				1170686C297AE47B0002B1CC /* mountains.png */,
 			);
 			path = DevelopingWithWebMaps;
 			sourceTree = "<group>";
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = DevelopingWithWebMaps;
+			packageProductDependencies = (
+				1170686A297AE0A20002B1CC /* ArcGIS */,
+			);
 			productName = DevelopingWithWebMaps;
 			productReference = 11706852297ADDC90002B1CC /* DevelopingWithWebMaps.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 11706849297ADDC90002B1CC;
+			packageReferences = (
+				11706869297AE0A10002B1CC /* XCRemoteSwiftPackageReference "arcgis-runtime-ios" */,
+			);
 			productRefGroup = 11706853297ADDC90002B1CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +135,7 @@
 			files = (
 				11706862297ADDCB0002B1CC /* LaunchScreen.storyboard in Resources */,
 				1170685F297ADDCB0002B1CC /* Assets.xcassets in Resources */,
+				1170686D297AE47B0002B1CC /* mountains.png in Resources */,
 				1170685D297ADDC90002B1CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +149,6 @@
 			files = (
 				1170685A297ADDC90002B1CC /* ViewController.swift in Sources */,
 				11706856297ADDC90002B1CC /* AppDelegate.swift in Sources */,
-				11706858297ADDC90002B1CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11706869297AE0A10002B1CC /* XCRemoteSwiftPackageReference "arcgis-runtime-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/esri/arcgis-runtime-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 100.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1170686A297AE0A20002B1CC /* ArcGIS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11706869297AE0A10002B1CC /* XCRemoteSwiftPackageReference "arcgis-runtime-ios" */;
+			productName = ArcGIS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1170684A297ADDC90002B1CC /* Project object */;
 }
